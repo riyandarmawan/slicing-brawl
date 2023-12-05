@@ -6,6 +6,7 @@
     --bg-active-category: white;
     --color-active-category: black;
     --bg-membership: #fff0e5;
+    --bg-footer: #090e23;
 }
 
 * {
@@ -360,4 +361,71 @@ body {
     background-color: var(--primary);
     padding: 0.5rem 1.5rem;
     color: white;
+}
+
+/* event start */
+.event {
+    padding: 5rem 15%;
+}
+
+.event h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.event .content {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 18rem 18rem 18rem;
+}
+
+.event .content .event-group > img {
+    width: 100%;
+}
+
+.event .content .event-group .about {
+    display: flex;
+    align-items: center;
+}
+
+.event .content .event-group .about .date {
+    padding-right: 1rem;
+    margin: 1rem 0;
+    border-right: 2px solid #eceaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event .content .event-group .about .date h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.event .content .event-group .about .date p {
+    font-size: .8rem;
+}
+
+.event .content .event-group .about .location {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.event .content .event-group .about .location img {
+    border-left: 2px solid #eceaea;
+    margin-right: .3rem;
+}
+
+.event .content .event-group .about .location p {
+    font-size: .7rem;
+}
+
+.event .content .event-group h3 {
+    font-size: 1.1rem;
+}
+
+/* footer start */
+footer {
+    background-color: var(--bg-footer);
 }
