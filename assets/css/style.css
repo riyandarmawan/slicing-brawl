@@ -294,7 +294,7 @@ body {
 .category-section .category-group .gambar {
     background-color: #ececec;
     border-radius: 50%;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-right: 1rem;
     display: flex;
     justify-content: center;
@@ -319,8 +319,8 @@ body {
 }
 
 .category-section > a img {
-    margin-left: .5rem;
-    margin-top: .2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 /* skll start */
@@ -354,7 +354,7 @@ body {
 }
 
 .skill .content .text p {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .skill .content .text a {
@@ -403,7 +403,7 @@ body {
 }
 
 .event .content .event-group .about .date p {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .event .content .event-group .about .location {
@@ -414,11 +414,11 @@ body {
 
 .event .content .event-group .about .location img {
     border-left: 2px solid #eceaea;
-    margin-right: .3rem;
+    margin-right: 0.3rem;
 }
 
 .event .content .event-group .about .location p {
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 .event .content .event-group h3 {
@@ -428,4 +428,70 @@ body {
 /* footer start */
 footer {
     background-color: var(--bg-footer);
+    padding: 3rem 15% 1rem;
+}
+
+footer * {
+    color: #a8a8a8;
+}
+
+footer .top {
+    display: flex;
+    gap: 7rem;
+    margin-bottom: 4rem;
+}
+
+footer .top > * > *:nth-child(1) {
+    margin-bottom: 2rem;
+    color: white;
+}
+
+footer .top .liga-smk > img:nth-child(1) {
+    margin-bottom: 1.4rem;
+    width: 8rem;
+}
+
+footer .top .liga-smk p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    width: 110%;
+}
+
+footer .top .liga-smk .social-media * {
+    margin: 0 0.25rem;
+}
+
+footer .top .resources a, footer .top .support a {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    display: block;
+    width: max-content;
+}
+
+footer .top .download h3 {
+    width: max-content;
+}
+
+footer .top .download a img {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+}
+
+
+footer .bottom {
+    border-top: 1px solid #41414160;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+footer .bottom p {
+    right: 0;
+    position: absolute;
 }
