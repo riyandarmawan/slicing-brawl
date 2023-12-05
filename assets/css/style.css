@@ -1,0 +1,363 @@
+:root {
+    --primary: #3a10e5;
+    --bg-home: #f0f3ff;
+    --bg-chance: #facb3b;
+    --no-active-category: #a8a8a8;
+    --bg-active-category: white;
+    --color-active-category: black;
+    --bg-membership: #fff0e5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+/* header start */
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 15%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header > img {
+    width: 6.5rem;
+}
+
+.header .navbar {
+    display: flex;
+}
+
+.header .navbar > * {
+    margin: 0 1rem;
+}
+
+.header .navbar * {
+    font-weight: 400;
+}
+
+.header .navbar a {
+    color: black;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.header .navbar .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .dropdown.active > * {
+    color: var(--primary);
+}
+
+.header .navbar .dropdown a {
+    margin-right: 0.2rem;
+}
+
+.header .navbar .dropdown img,
+.header .navbar .dropdown svg {
+    margin-top: 0.1rem;
+}
+
+/* home stat */
+.home {
+    background-color: var(--bg-home);
+    height: 100vh;
+    padding: 4rem 15% 0;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: last center;
+}
+
+.home .content .text {
+    width: 45%;
+}
+
+.home .content .text > * {
+    margin: 1rem 0;
+}
+
+.home .content .text h1 {
+    font-size: 3.5rem;
+}
+
+.home .content .text p {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.home .content .text a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    width: 45%;
+}
+
+.home .content .text a img {
+    width: 1rem;
+}
+
+.home .content img {
+    width: 40%;
+}
+
+/* chance start */
+.chance {
+    background-color: var(--bg-chance);
+    padding: 3rem 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chance .chance-group {
+    display: flex;
+    align-items: center;
+}
+
+.chance .chance-group img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.chance .chance-group:nth-child(2) img {
+    width: 2rem;
+}
+
+.chance .chance-group .text h2 {
+    font-size: 1.2rem;
+}
+
+.chance .chance-group .text p {
+    font-size: 0.9rem;
+}
+
+/* study start */
+.study {
+    padding: 5rem 15%;
+    height: 100vh;
+}
+
+.study .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.study .top .category {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.study .top .category a {
+    margin: 0 0.5rem;
+    font-weight: 600;
+    color: var(--no-active-category);
+}
+
+.study .top .category a.active {
+    padding: 0.5rem;
+    background-color: var(--bg-active-category);
+    box-shadow: 0 0 2rem 1rem #e4e4e4;
+    color: var(--color-active-category);
+}
+
+.study .content {
+    display: grid;
+    grid-template-columns: 13.8rem 13.8rem 13.8rem 13.8rem;
+    gap: 1rem;
+}
+
+.study .content .content-group {
+    box-shadow: 0 0 0.1rem 0.1rem #e4e4e4;
+    position: relative;
+}
+
+.study .content .content-group img:nth-child(1) {
+    width: 100%;
+}
+
+.study .content .content-group img:nth-child(2) {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.study .content .content-group .text {
+    padding: 0.5rem 1.5rem;
+}
+
+.study .content .content-group .text > * {
+    margin: 0.7rem 0;
+}
+
+.study .content .content-group .text > p {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.study .content .content-group .text h3 {
+    font-size: 0.9rem;
+}
+
+.study .content .content-group .text .bottom {
+    display: flex;
+    align-items: center;
+}
+
+.study .content .content-group .text .bottom img {
+    margin-right: 0.5rem;
+    width: 0.7rem;
+}
+
+.study .content .content-group .text .bottom p {
+    margin-right: 1rem;
+    font-size: 0.7rem;
+}
+
+/* membership start */
+.membership {
+    margin-top: 12rem;
+    padding: 3rem 15%;
+    background-color: var(--bg-membership);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.membership > img {
+    width: 9rem;
+}
+
+.membership h1 {
+    width: 40%;
+    font-size: 1.8rem;
+}
+
+.membership a {
+    background-color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    color: white;
+}
+
+/* category start */
+.category-section {
+    padding: 5rem 15%;
+}
+
+.category-section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.category-section .content {
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem 13rem;
+    gap: 2rem;
+}
+
+.category-section .category-group {
+    background-color: white;
+    box-shadow: 0 0 2rem 1rem #ececec;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.category-section .category-group .gambar {
+    background-color: #ececec;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-section .category-group .gambar img {
+    width: 2rem;
+}
+
+.category-section .category-group .text p {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.category-section > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    color: var(--primary);
+}
+
+.category-section > a img {
+    margin-left: .5rem;
+    margin-top: .2rem;
+}
+
+/* skll start */
+.skill {
+    padding: 4rem 15%;
+}
+
+.skill .content {
+    padding: 3rem 7rem;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .content img {
+    width: 35%;
+}
+
+.skill .content .text {
+    width: 50%;
+    margin-top: -2rem;
+}
+
+.skill .content .text > * {
+    margin: 1.5rem 0;
+}
+
+.skill .content .text h1 {
+    font-size: 2rem;
+}
+
+.skill .content .text p {
+    font-size: .8rem;
+}
+
+.skill .content .text a {
+    background-color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    color: white;
+}
