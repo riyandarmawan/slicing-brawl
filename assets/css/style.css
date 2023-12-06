@@ -469,6 +469,10 @@ footer .top .resources a, footer .top .support a {
     width: max-content;
 }
 
+footer .top .resources a:hover, footer .top .support a:hover {
+    color: white;
+}
+
 footer .top .download h3 {
     width: max-content;
 }
